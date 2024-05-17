@@ -1,31 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Blog Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Blog</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article>
-            <h2>Blog Post Title</h2>
-            <p>Published on: <time datetime="2024-05-15">May 15, 2024</time></p>
-            <p>This is the content of the blog post. You can write anything here.</p>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Blog. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77b300 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+    background: #fff;
+}
+
+.blog-post {
+    border-bottom: #ccc 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.blog-post h2 {
+    color: #333;
+}
+
+.blog-post .post-meta {
+    color: #777;
+    font-size: 14px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.read-more {
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background: #77b300;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}

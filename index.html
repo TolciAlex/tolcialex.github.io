@@ -3,29 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Blog Page</title>
+    <title>My Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Blog</h1>
+        <div class="container">
+            <h1>Welcome to My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
     <main>
-        <article>
-            <h2>Blog Post Title</h2>
-            <p>Published on: <time datetime="2024-05-15">May 15, 2024</time></p>
-            <p>This is the content of the blog post. You can write anything here.</p>
-        </article>
+        <div class="container">
+            <article class="blog-post">
+                <h2>Blog Post Title 1</h2>
+                <p class="post-meta">Posted on May 18, 2024 by Author</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna. Praesent ac felis in tortor euismod volutpat. Phasellus a ultrices eros, nec egestas arcu.</p>
+                <a href="#" class="read-more">Read more</a>
+            </article>
+            <article class="blog-post">
+                <h2>Blog Post Title 2</h2>
+                <p class="post-meta">Posted on May 10, 2024 by Author</p>
+                <p>Nullam nec lacus eros. Fusce at consequat elit. In vel dolor at dui aliquet euismod. Aliquam erat volutpat. Integer eu lectus non risus pulvinar gravida.</p>
+                <a href="#" class="read-more">Read more</a>
+            </article>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
