@@ -417,33 +417,38 @@
 				<div class="container">
 					<h2>Contact</h2>
 					<div class="grid">
-											<form class="card" method="POST" action="https://formsubmit.co/Alin.Dadalig.DigitalLaw@outlook.com">
-												<!-- Anti-spam honeypot -->
-												<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-												<!-- FormSubmit options -->
-												<input type="hidden" name="_subject" value="Mesaj nou de pe site — AGD INNERPATH SRL" />
-												<input type="hidden" name="_template" value="table" />
-												<input type="hidden" name="_captcha" value="false" />
-							<div class="form-row">
-										<label for="name">Nume</label>
-										<input id="name" name="name" type="text" placeholder="Numele tău" required />
-							</div>
-							<div class="form-row">
-										<label for="email">Email</label>
-										<input id="email" name="email" type="email" placeholder="tu@exemplu.com" required />
-							</div>
-							<div class="form-row">
-										<label for="phone">Telefon</label>
-										<input id="phone" name="phone" type="tel" placeholder="+40 ..." />
-							</div>
-							<div class="form-row">
-										<label for="message">Mesaj</label>
-										<textarea id="message" name="message" rows="5" placeholder="Cu ce te putem ajuta?" required></textarea>
-							</div>
-							<div class="form-actions">
-														<button type="submit" class="btn">Trimite mesaj</button>
-							</div>
-						</form>
+																																	<!-- Web3Forms: preserves card UI and uses native inputs -->
+																																	<div class="card" style="width:100%; max-width:700px; margin:0 auto">
+																																		<form method="POST" action="https://api.web3forms.com/submit">
+																																			<!-- Web3Forms required fields -->
+																																			<input type="hidden" name="access_key" value="7b8ad318-104e-48cb-8f7f-981cb2f85eff" />
+																																			<input type="hidden" name="subject" value="Mesaj nou de pe site — AGD INNERPATH SRL" />
+																																			<input type="hidden" name="from_name" value="AGD INNERPATH SRL" />
+																																			<input type="hidden" name="redirect" value="thank-you.html" />
+																																			<!-- Optional honeypot -->
+																																			<input type="checkbox" name="botcheck" style="display:none">
+
+																																			<div class="form-row">
+																																				<label for="name">Nume</label>
+																																				<input id="name" name="name" type="text" placeholder="Numele tău" required />
+																																			</div>
+																																			<div class="form-row">
+																																				<label for="email">Email</label>
+																																				<input id="email" name="email" type="email" placeholder="tu@exemplu.com" required />
+																																			</div>
+																																			<div class="form-row">
+																																				<label for="phone">Telefon</label>
+																																				<input id="phone" name="phone" type="tel" placeholder="+40 ..." />
+																																			</div>
+																																			<div class="form-row">
+																																				<label for="message">Mesaj</label>
+																																				<textarea id="message" name="message" rows="5" placeholder="Cu ce te putem ajuta?" required></textarea>
+																																			</div>
+																																			<div class="form-actions">
+																																				<button type="submit" class="btn">Trimite mesaj</button>
+																																			</div>
+																																		</form>
+																																	</div>
 
 						<aside class="card contact-card">
 									<h3>Date de contact</h3>
